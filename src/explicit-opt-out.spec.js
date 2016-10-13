@@ -3,7 +3,7 @@ import localPad from './left-pad';
 
 jest.unmock('left-pad');
 
-describe('test cases for this jest bug', () => {
+describe('with an explicit opt-out', () => {
   it('globalPad should not be a mock function', () => {
     expect(jest.isMockFunction(globalPad)).toBe(false);
   });

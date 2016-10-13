@@ -1,7 +1,7 @@
 import globalPad from 'left-pad';
 import localPad from './left-pad';
 
-describe('test cases for this jest bug', () => {
+describe('with no explicit opt-out', () => {
   it('globalPad should not be a mock function', () => {
     expect(jest.isMockFunction(globalPad)).toBe(false);
   });
